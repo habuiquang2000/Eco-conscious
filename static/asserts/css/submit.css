@@ -1,0 +1,32 @@
+    /* Letters UI/UX styles */
+    .wrap-input1 {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+    .input1 {
+        width: 100%;
+        font-size: 16px;
+        color: #555555;
+        line-height: 1.2;
+        display: block;
+        height: 52px;
+        background: transparent;
+        padding: 0 5px 0 38px;
+    }
+    .input1::placeholder {
+        color: #cccccc;
+    }
+    .shadow-input1 {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.1);
+        pointer-events: none;
+        z-index: -1;
+    }

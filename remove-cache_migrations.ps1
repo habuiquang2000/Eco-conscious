@@ -1,0 +1,1 @@
+Get-ChildItem .\ -include migrations,__pycache__ -Recurse | foreach ($_) { remove-item $_.fullname -Force -Recurse }
