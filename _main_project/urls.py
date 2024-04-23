@@ -104,7 +104,7 @@ urlpatterns += [
     re_path(r'^testimonials.html', TestimonialsView, name='TestimonialsView'),
 
     re_path(r'^application', ApplicationInfoView, name='ApplicationInfoView'),
-    path('<str:page>', HomeStaticHtmlView, name='HomeStaticHtmlView'),
+    # path('<str:page>', HomeStaticHtmlView, name='HomeStaticHtmlView'),
     path('', HomeView, name='HomeView'),
 ]
 
