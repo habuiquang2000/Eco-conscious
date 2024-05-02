@@ -33,8 +33,7 @@ SECRET_KEY = 'django-insecure-)kqoss(!qnu$#-ofa)&vh0u*6=*3#v@jf)v0t#0er1s%e89t44
 
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = [
-    'https://0923-117-5-225-221.ngrok-free.app',
-    'http://0923-117-5-225-221.ngrok-free.app',
+    'https://1a5f-117-5-225-221.ngrok-free.app',
 ]
 CORS_ALLOW_HEADERS = (
     "accept",
@@ -89,8 +88,7 @@ INSTALLED_APPS = [
 
     #     'core'
 
-    'app_blog',
-    'app_gallery',
+    'app_news',
     'app_handle',
     'app_home',
     'app_info',

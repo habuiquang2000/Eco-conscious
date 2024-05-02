@@ -266,7 +266,10 @@ Home Page Content Start
 	padding: 18px;
 }
 /***************  Home 1 Slider Start  *****************/
-
+.sinfo >img{
+    width: 57px;
+    height: 57px;
+}
 .item {
 	position: relative;
 }
@@ -1519,6 +1522,9 @@ section.services-area ul {
 	background: #fff;
 	border-radius: 5px;
 	box-shadow: 0 12px 26px rgba(0,0,0,.08);
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 section.services-area ul li {
 	width: 20%;
@@ -5118,7 +5124,52 @@ ul.children {
 	font-weight: 700;
 	color: #222;
 }
-/*********************************
+.contact1 .container-contact1 {
+	width: 100%;
+}
+.container-contact1 .wrap-input1, .input1{
+	width: 100%;
+	padding: 9px 0px 9px 0px;
+}
+.container-contact1 .input1{
+	width: 100%; /* Độ rộng ban đầu của ô */
+    height: 200px; /* Độ cao ban đầu của ô */
+	padding: 10px;
+	border: 1px solid #ced4da;
+	display: block;
+    overflow:  auto;
+	resize: vertical;
+}
+.container-contact1 .validate-input>input{
+	height: 45px;
+    width: 100%;
+	padding: 10px;
+	border: 1px solid #ced4da;
+}
+.container-contact1-form-btn{
+	display: flex;
+    justify-content: end;
+    width: 100%;
+}
+#submit-btn{
+	color: #FFF;
+    background-color: #2e44ff;
+    border-color: #2e44ff;
+    border: none;
+    border-radius: 0.25rem;
+    height: 41px;
+    width: 120px;
+}
+	#submit-btn:hover{
+		cursor: pointer;
+		cursor: pointer;
+		box-shadow: rgba(0, 0, 0, 0.25) 3px 3px 5px 0px;
+        transform: scale(0.9);
+        transition: all 0.6s ease 0s;
+    }
+	
+
+/********************************
 Blog Details End
 *********************************/
 
@@ -6777,4 +6828,20 @@ section.wf100.p80.fcampaigns {
   }
   .mx-auto{
 	width: 100%;
+  }
+ul {
+	list-style-type: none;
+	padding: 0;
+  }  
+
+  
+  ul li p {
+	margin: 0; /* Xóa margin mặc định của thẻ p */
+  }
+  
+  ul li a {
+	text-decoration: none;
+  }
+  
+  ul li a:hover {
   }

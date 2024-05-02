@@ -22,15 +22,15 @@ from django.conf.urls.static import static
 
 from cicd_hook.views import TypeformSubmissions
 
-from app_blog.views import (
+from app_news.views.blog import (
     BlogDetailsView,
     BlogView,
-    BlogThreeColView
-)
-from app_gallery.views import (
+    BlogThreeColView,
     GalleryFullView,
     GalleryGridView,
-    GalleryMasonryView
+    GalleryMasonryView,
+    EventDetailsView,
+    EventsListView,
 )
 from app_handle.views import (
     Page404View
@@ -44,8 +44,6 @@ from app_info.views import (
     AboutView,
     ComingSoonView,
     ContactOneView,
-    EventDetailsView,
-    EventsListView,
     ProjectsDetailsView,
     ProjectsListView,
     TeamView,
@@ -64,7 +62,7 @@ webhooks = [
 ]
 
 urlpatterns = [
-    path('admin', admin.site.urls),
+    path('admin/', admin.site.urls),
 
     path('ckeditor/', include('ckeditor_uploader.urls')),
     re_path(r'^api-auth', include('rest_framework.urls')),

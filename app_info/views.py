@@ -36,28 +36,6 @@ def ContactOneView(req):
     return render(req, 'NCKH-2024/django-templates/contact-one.html')
 
 
-def EventDetailsView(req):
-    # query = Blog.objects
-
-    # context = {
-    #     'blogs': query.all()
-    # }
-
-    # return render(req, 'NCKH-2024/django-templates/blog-details.html', context)
-    return render(req, 'NCKH-2024/django-templates/event-details.html')
-
-
-def EventsListView(req):
-    # query = Blog.objects
-
-    # context = {
-    #     'blogs': query.all()
-    # }
-
-    # return render(req, 'NCKH-2024/django-templates/blog.html', context)
-    return render(req, 'NCKH-2024/django-templates/events-list.html')
-
-
 def ProjectsDetailsView(req):
     # query = Blog.objects
 
