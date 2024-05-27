@@ -60,7 +60,7 @@ DATABASES = {
         'NAME': 'eco_conscious',
         'USER': 'eco_conscious',
         'PASSWORD': 'eco_conscious',
-        'HOST': 'localhost',
+        'HOST': '192.168.102.29',
         'PORT': '',
     }
 }

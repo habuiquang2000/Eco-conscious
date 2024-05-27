@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-)kqoss(!qnu$#-ofa)&vh0u*6=*3#v@jf)v0t#0er1s%e89t44
 
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = [
-    'https://1a5f-117-5-225-221.ngrok-free.app',
+    'https://8393-58-187-250-48.ngrok-free.app',
 ]
 CORS_ALLOW_HEADERS = (
     "accept",

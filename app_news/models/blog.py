@@ -6,7 +6,10 @@ from .base import NewsCommon, NewsCommentCommon
 
 # Create your models here.
 class Blog(NewsCommon):
-    pass
+    moderation = models.BooleanField(
+        verbose_name="Đã kiểm duyệt",
+        default=False
+    )
 
 
 class BlogComment(NewsCommentCommon):
@@ -14,4 +17,8 @@ class BlogComment(NewsCommentCommon):
         to=Blog,
         on_delete=models.CASCADE,
         related_name="comments",
+    )
+    moderation = models.BooleanField(
+        verbose_name="Đã kiểm duyệt",
+        default=False
     )
